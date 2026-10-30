@@ -91,7 +91,7 @@ python scripts/train_models.py
 
 ## Project Screenshot
 
-![Early Disease Prediction](C:\Users\Sunil Kumar\OneDrive\Desktop\Project29_Final\Project_29_Early_Disease_Prediction_Sunil_Kumar_2300320100254\Early_Disease_Prediction_Project\output.png)
+![Early Disease Prediction](outputs)
 
 
 
