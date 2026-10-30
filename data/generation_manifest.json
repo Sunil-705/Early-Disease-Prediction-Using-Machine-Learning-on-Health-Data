@@ -1,0 +1,11 @@
+{
+  "seed_rows": 500,
+  "synthetic_rows": 4500,
+  "total_rows": 5000,
+  "synthetic_balanced_2000_rows": 2000,
+  "seed_plus_2000_total_rows": 2500,
+  "anomaly_rows_flagged": 135,
+  "random_seed": 20261030,
+  "method": "Class-conditioned bootstrap perturbation of supplied seed rows; labels inherited from parent rows.",
+  "warning": "Synthetic rows are not independent patient observations and must not be used as a held-out test set."
+}

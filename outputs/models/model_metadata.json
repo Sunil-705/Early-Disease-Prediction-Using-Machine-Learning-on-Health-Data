@@ -1,0 +1,20 @@
+{
+  "selected_model": "Random Forest",
+  "features": [
+    "age",
+    "bmi",
+    "blood_pressure",
+    "glucose",
+    "cholesterol",
+    "smoking"
+  ],
+  "positive_label": 1,
+  "negative_label": 0,
+  "test_method": "Stratified 80/20 split of original 500 uploaded records; synthetic rows linked to training-fold parents only; test rows are original-only.",
+  "seed": 42,
+  "n_original_records": 500,
+  "n_train_original": 400,
+  "n_train_synthetic": 3570,
+  "n_test_original": 100,
+  "warning": "The generic binary label is not tied to a specified disease and source provenance of the uploaded seed file is unknown. Educational demonstration only."
+}

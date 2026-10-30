@@ -1,0 +1,9 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description
+patient_id,string,P0001,P0002,P0003,No,An anonymised record identifier created for this dataset. It is not a real-world patient identifier.
+age,integer,30,67,73,No,Age of the record subject in years. Values are numerical. Confirm age range and source provenance before clinical interpretation.
+bmi,float,20.7,27.7,18.7,No,"Body mass index (BMI), conventionally expressed in kg/m². The provided file does not specify units or measurement protocol; confirm before use."
+blood_pressure,integer,136,128,106,No,"Blood-pressure measurement. The provided file does not say whether values are systolic, diastolic, or another measurement; unit is not explicitly documented."
+glucose,integer,156,87,131,No,"Glucose measurement. The provided file does not state fasting status, measurement context, or units; confirm before clinical interpretation."
+cholesterol,integer,191,158,273,No,Cholesterol measurement. The source file does not specify total/HDL/LDL type or units; do not assume a subtype.
+smoking,binary integer,1,0,0,No,Binary smoking indicator: 1 = smoking recorded as yes; 0 = smoking recorded as no. Exact definition and collection period are not supplied.
+label,binary integer,1,1,0,No,"Binary target label: 1 = disease/positive; 0 = no disease/negative, following the prompt. The specific disease/diagnostic criteria behind the label are not documented."

@@ -1,0 +1,10 @@
+# Data, Label, and Evaluation Limitations
+
+1. **Generic binary label:** The provided `label` is 0/1 and is described in the prompt as disease/no disease. The source does not specify whether it means diabetes, heart disease, hypertension, another condition, or a composite. It is therefore treated as a generic target.
+2. **Unspecified measurement semantics:** `blood_pressure` does not identify systolic/diastolic measurement. Glucose and cholesterol units/types are not recorded. The project dictionary explicitly notes these unknowns rather than silently assigning units.
+3. **Unknown seed provenance:** The uploaded 500-row file does not include row-level source references or a source licence statement. Do not claim its records came from Pima or UCI Heart until provenance is verified.
+4. **Synthetic augmentation:** Synthetic samples are derived from the 500 seed records using class-conditioned bootstrap sampling and bounded perturbations. Their labels are inherited from selected parents. This does not increase independent sample size or clinical evidence.
+5. **Leakage control:** The model-training script first holds out original seed records. Only synthetic children whose parent is in the training fold are eligible for training. The held-out test records remain original seed records only.
+6. **Anomaly flagging:** 3% of generated synthetic records have a boundary/outlier feature value. The `record_provenance.csv` file identifies these records. They are robustness-test cases, not confirmed data-entry errors or real clinical outliers.
+7. **Source harmonisation:** Pima and UCI Heart datasets have different feature schemas and target definitions. They are fetched separately and must be trained/evaluated as separate condition-specific tasks unless a medically meaningful, documented harmonisation protocol is designed.
+8. **No clinical claims:** Model accuracy on this dataset cannot be interpreted as sensitivity, specificity, or clinical utility in a real population without suitable external validation and clinical oversight.
