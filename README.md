@@ -89,6 +89,12 @@ python scripts/train_models.py
 5. **Explainability:** SHAP global feature importance where the installed SHAP/model combination supports it; a permutation-importance fallback is generated if not.
 6. **Interface:** Streamlit form for the six input features, displaying the model's prediction for the supplied binary label and a probability estimate.
 
+## Project Screenshot
+
+![Early Disease Prediction](C:\Users\Sunil Kumar\OneDrive\Desktop\Project29_Final\Project_29_Early_Disease_Prediction_Sunil_Kumar_2300320100254\Early_Disease_Prediction_Project\output.png)
+
+
+
 ## Repository structure
 
 ```text
