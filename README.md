@@ -91,7 +91,7 @@ python scripts/train_models.py
 
 ## Project Screenshot
 
-![Early Disease Prediction](outputs)
+![Early Disease Prediction](output.png)
 
 
 
